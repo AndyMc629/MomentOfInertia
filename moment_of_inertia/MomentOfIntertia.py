@@ -106,7 +106,7 @@ print "Product I_A*I_B*I_C = ", np.linalg.eig(I)[0][0]*np.linalg.eig(I)[0][1]*np
 
 Tmin=50
 Tmax=1000
-dT=50
+dT=10
 
 F=np.zeros( ( (Tmax-Tmin)/dT,2) )
 Z=np.zeros( ( (Tmax-Tmin)/dT,2) )
