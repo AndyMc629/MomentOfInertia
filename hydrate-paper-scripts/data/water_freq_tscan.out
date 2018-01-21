@@ -1,0 +1,1969 @@
+date:               Sat  9 Dec 15:16:35 GMT 2017
+hostname:           cx1-136-16-3
+system:             Linux cx1-136-16-3 3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+user:               apm13
+input:              /export101/work/apm13/final_simulations_june_2017/crystal/water/opt_mono_crystalline/freq_tscan/water_freq_tscan.d12
+output:             /export101/work/apm13/final_simulations_june_2017/crystal/water/opt_mono_crystalline/freq_tscan/water_freq_tscan.out
+executable script:  /home/gmallia/CRYSTAL14_cx1/runcry14P.v4
+executable dir:     /home/apm13/../gmallia/CRYSTAL14_cx1/v4/bin/Linux-mpiifort/Xeon___mpi__intel-5.1___intel-suite__2016.3
+executables:     
+                    -rwxr-xr-x 1 gmallia hpc-users    24001 Nov 10  2016 INFO
+                    -rwxr-xr-x 1 gmallia hpc-users       57 Nov 10  2016 INFO.module.bash
+                    -rwxr-xr-x 1 gmallia hpc-users      101 Nov 10  2016 INFO.module.csh
+                    -rwxr-xr-x 1 gmallia hpc-users 26051333 Nov 10  2016 Pcrystal
+                    -rwxr-xr-x 1 gmallia hpc-users 10122217 Nov 10  2016 Pproperties 
+
+Command:            mpiexec  /home/apm13/../gmallia/CRYSTAL14_cx1/v4/bin/Linux-mpiifort/Xeon___mpi__intel-5.1___intel-suite__2016.3/Pcrystal
+temporary directory:/var/tmp/pbs.902152.cx1/water_freq_tscan_10982      
+<qstat -f 902152.cx1>
+Job Id: 902152.cx1
+    Job_Name = water_tscan
+    Job_Owner = apm13@login-3-internal.cx1.hpc.ic.ac.uk
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:00
+    resources_used.mem = 0kb
+    resources_used.ncpus = 16
+    resources_used.vmem = 0kb
+    resources_used.walltime = 00:00:00
+    job_state = R
+    queue = v1_general24
+    server = cx1
+    Checkpoint = u
+    ctime = Sat Dec  9 15:13:51 2017
+    Error_Path = login-3-internal.cx1.hpc.ic.ac.uk:/work/apm13/final_simulation
+	s_june_2017/crystal/water/opt_mono_crystalline/freq_tscan/water_tscan.e
+	902152
+    exec_host = cx1-136-16-3/0*16
+    exec_vnode = (cx1-136-16-3:ncpus=16:mem=1048576kb)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Sat Dec  9 15:16:31 2017
+    Output_Path = login-3-internal.cx1.hpc.ic.ac.uk:/work/apm13/final_simulatio
+	ns_june_2017/crystal/water/opt_mono_crystalline/freq_tscan/water_tscan.
+	o902152
+    Priority = 0
+    qtime = Sat Dec  9 15:13:51 2017
+    Rerunable = True
+    Resource_List.mem = 1gb
+    Resource_List.mpiprocs = 16
+    Resource_List.ncpus = 16
+    Resource_List.nodect = 1
+    Resource_List.place = scatter:excl
+    Resource_List.select = 1:ncpus=16:mem=1gb:mpiprocs=16:ompthreads=1
+    Resource_List.tmpspace = 10gb
+    Resource_List.walltime = 10:00:00
+    stime = Sat Dec  9 15:16:31 2017
+    session_id = 10811
+    jobdir = /home/apm13
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_HOME=/home/apm13,PBS_O_LOGNAME=apm13,
+	PBS_O_WORKDIR=/work/apm13/final_simulations_june_2017/crystal/water/op
+	t_mono_crystalline/freq_tscan,PBS_O_LANG=en_GB.UTF-8,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/home/apm13/perl5/bin:/usr/local/bin:
+	/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin,
+	PBS_O_MAIL=/var/spool/mail/apm13,PBS_O_QUEUE=v1_general24,
+	PBS_O_HOST=login-3-internal.cx1.hpc.ic.ac.uk
+    comment = Job run at Sat Dec 09 at 15:16 on (cx1-136-16-3:ncpus=16:mem=1048
+	576kb)
+    etime = Sat Dec  9 15:13:51 2017
+    run_count = 1
+    Submit_arguments = water_freq_tscan.qsub
+    pset = switchgroup=eswitch9
+    project = _pbs_project_default
+
+</qstat -f 902152.cx1>
+input data /export101/work/apm13/final_simulations_june_2017/crystal/water/opt_mono_crystalline/freq_tscan/water_freq_tscan.d12
+Monohydrate - relaxed in CRYSTAL
+CRYSTAL
+0 0 0
+11
+   10.29488149 4.82568899 11.09573888 100.740910
+6
+1  3.283712018699E-01  2.500000000000E-01  4.519435469599E-01
+1 -3.283712018699E-01 -2.500000000000E-01 -4.519435469599E-01
+1  1.921513702633E-01  2.500000000000E-01  4.905642840680E-01
+1 -1.921513702633E-01 -2.500000000000E-01 -4.905642840680E-01
+8  2.339362975236E-01  2.500000000000E-01  4.187071242024E-01
+8 -2.339362975236E-01 -2.500000000000E-01 -4.187071242024E-01
+FREQCALC
+NUMDERIV
+2
+TEMPERAT
+15 50 750
+ENDFREQ
+END
+1 4          ! H
+0 0 3 1.0 1.0
+34.061341000 0.00602519780
+5.1235746000 0.04502109400
+1.1646626000 0.20189726000
+0 0 1 0.0 1.0
+0.4157455100 1.00000000000
+0 0 1 0.0 1.0
+0.1795111000 1.00000000000
+0 2 1 0.0 1.0
+0.8000000000 1.00000000000
+8 5          ! O
+0 0 8 2.0 1.0
+ 8020.0 0.00108
+ 1338.0 0.00804
+ 255.4 0.05324
+ 69.22 0.1681
+ 23.90 0.3581
+ 9.264 0.3855
+ 3.851 0.1468
+ 1.212 0.0728
+0 1 4 6.0 1.0
+ 49.43 -0.00883 0.00958
+ 10.47 -0.0915 0.0696
+ 3.235 -0.0402 0.2065
+ 1.217 0.379 0.347
+0 1 1 0.0 1.0
+ 0.500 1.0 1.0
+0 1 1 0.0 1.0
+ 0.191 1.0 1.0
+0 3 1 0.0 1.0
+ 0.500 1.0
+99 0
+END
+DFT
+PBESOLXC
+END
+TOLINTEG
+8 8 8 8 16
+SHRINK
+2 4
+TOLDEE
+8
+FMIXING
+30
+PPAN
+END
+END
+No MPI process pinning
+No OMP Thread Affinity
+Starting MPD ring...
+/opt/pbs/default/bin/pbs_tmrsh cx1-136-16-3.cx1.hpc.ic.ac.uk -n /opt/pbs/default/bin/pbs_attach -j 902152.cx1 /apps/intel/impi/5.1.1.109/compilers_and_libraries_2016.0.109/linux/mpi/bin/mpd -n -h cx1-136-16-3 -p 43015 --ncpus=16 -e -d
+PBS has allocated the following nodes:
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+---
+mpiexec.intel -genv I_MPI_DEVICE rdssm -genv I_MPI_DEBUG 0 -genv I_MPI_FALLBACK_DEVICE ssm -genv DAPL_MAX_CM_RETRIES 500 -genv DAPL_MAX_CM_RESPONSE_TIME 300 -genv I_MPI_DAPL_CONNECTION_TIMEOUT 300 -genv I_MPI_PIN no -genv I_MPI_PIN_MODE none -machinefile /var/spool/PBS/aux/902152.cx1 -n 16 -wdir /var/tmp/pbs.902152.cx1/water_freq_tscan_10982 /home/apm13/../gmallia/CRYSTAL14_cx1/v4/bin/Linux-mpiifort/Xeon___mpi__intel-5.1___intel-suite__2016.3/Pcrystal
+
+Job output begins below
+-----------------------
+cx1-136-16-3:SCM:2b95:459f95c0: 130 us(130 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b95:459f95c0: 132 us(132 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9f:d8fd5c0: 204 us(204 us): cx1-136-16-3:SCM:2b91:bc8975c0: 190 us(190 us): cx1-136-16-3:SCM:2b98:23f515c0: 183 us(183 us): cx1-136-16-3:SCM:2b92:246175c0: 200 us(200 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b96:d21a95c0: 196 us(196 us): cx1-136-16-3:SCM:2b99:edd435c0: 185 us(185 us): cx1-136-16-3:SCM:2b97:463665c0: 193 us(193 us): cx1-136-16-3:SCM:2b93:756e55c0: 193 us(193 us):  open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9a:526c95c0: 201 us(201 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9e:7d6d15c0: 199 us(199 us): cx1-136-16-3:SCM:2b9d:6ca035c0: 172 us(172 us): cx1-136-16-3:SCM:2b9b:2176d5c0: 188 us(188 us):  open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2ba0:ba3fe5c0: 197 us(197 us):  open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b94:30f6f5c0: 865 us(865 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9c:4c5325c0: 197 us(197 us):  open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9e:7d6d15c0: 114 us(114 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b92:246175c0: 172 us(172 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b93:756e55c0: 191 us(191 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9c:4c5325c0: 177 us(177 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9d:6ca035c0: 178 us(178 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2ba0:ba3fe5c0: 173 us(173 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b98:23f515c0: 206 us(206 us): cx1-136-16-3:SCM:2b97:463665c0: 165 us(165 us):  open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9a:526c95c0: 154 us(154 us): cx1-136-16-3:SCM:2b94:30f6f5c0: 187 us(187 us):  open_hca: device mlx4_0 not found
+ open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9b:2176d5c0: 151 us(151 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b96:d21a95c0: 159 us(159 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b91:bc8975c0: 164 us(164 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b99:edd435c0: 170 us(170 us):  open_hca: device mlx4_0 not found
+cx1-136-16-3:SCM:2b9f:d8fd5c0: 170 us(170 us):  open_hca: device mlx4_0 not found
+          16 PROCESSORS WORKING
+
+         
+ *******************************************************************************
+ *                                                                             *
+ *                               CRYSTAL14                                     *
+ *                      public : 1.0.4 - Feb 23rd, 2016                        *
+ *                       HTTP://WWW.CRYSTAL.UNITO.IT                           *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *  R. DOVESI(1,11), V.R. SAUNDERS(2), C. ROETTI(1,11), R. ORLANDO(1,11),      *
+ *  C.M. ZICOVICH-WILSON(1,3), F. PASCALE(4), B. CIVALLERI(1,11),              *
+ *  K. DOLL(5), N.M. HARRISON(2,6), I. J. BUSH(7), Ph. D'ARCO(8),              *
+ *  M. LLUNELL(9), M. CAUSA'(10), Y. NOEL(8)                                   *
+ *                                                                             *
+ *        CONTRIBUTIONS TO THE CURRENT RELEASE HAVE BEEN GIVEN BY              *
+ *                                                                             *
+ *  L. MASCHIO(1,11), S. CASASSA(1,11), A. ERBA(1,11), M. FERRABONE(1,11),     *
+ *  M. DE LA PIERRE(1,11), M. FERRERO(1,11), V. LACIVITA(1,11),                *
+ *  J. BAIMA(1,11), E. ALBANESE(1,11), M.F. PEINTINGER(12), R. BAST(13),       *
+ *  M. RERAT(14), B. KIRTMAN(15), R. DEMICHELIS(1,16)                          *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+ *     http://www.crystal.unito.it                                             *
+ * (2) COMPUTATIONAL SCIENCE & ENGINEERING DEPARTMENT - STFC DARESBURY (UK)    *
+ *     http://www.stfc.ac.uk/CSE/randd/cmg/CRYSTAL/25806.aspx                  *
+ * (3) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (4) UNIVERSITE' DE LORRAINE - NANCY (FRANCE)                                *
+ * (5) UNIVERSITAET ULM - ULM (GERMANY); (6) IMPERIAL COLLEGE - LONDON (UK)    *
+ * (7) NAG - OXFORD (UK); (8) UPMC - SORBONNE UNIVERSITES - PARIS (FRANCE)     *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) UNIVERSITA' DI NAPOLI "FEDERICO II" - NAPOLI (ITALY)                    *
+ *(11) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *(12) MPI FUER CHEMISCHE ENERGIEKONVERSION - MUELHEIM AN DER RUHR (GERMANY)   *
+ *(13) UNIVERSITY OF STOCKHOLM - STOCKHOLM (SWEDEN)                            *
+ *(14) UNIVERSITE' DE PAU ET DES PAYS DE L'ADOUR - PAU (FRANCE)                *
+ *(15) UNIVERSITY OF CALIFORNIA SANTA BARBARA - SANTA BARBARA (USA)            *
+ *(16) CURTIN UNIVERSITY - PERTH (AUSTRALIA)                                   *
+ *                                                                             *
+ ********************************************************************************
+ EEEEEEEEEE STARTING  DATE 09 12 2017 TIME 15:16:38.8
+ Monohydrate - relaxed in CRYSTAL                                                
+
+ CRYSTAL CALCULATION
+ (INPUT ACCORDING TO THE INTERNATIONAL TABLES FOR X-RAY CRYSTALLOGRAPHY)
+ CRYSTAL FAMILY                       :  MONOCLINIC  
+ CRYSTAL CLASS  (GROTH - 1921)        :  MONOCLINIC PRISMATIC                 
+
+ SPACE GROUP (CENTROSYMMETRIC)        :  P 21/M          
+
+ LATTICE PARAMETERS  (ANGSTROMS AND DEGREES) - CONVENTIONAL CELL
+        A           B           C        ALPHA        BETA       GAMMA
+    10.29488     4.82569    11.09574    90.00000   100.74091    90.00000
+
+
+ NUMBER OF IRREDUCIBLE ATOMS IN THE CONVENTIONAL CELL:    6
+
+ INPUT COORDINATES
+
+ ATOM AT. N.              COORDINATES
+   1   1     3.283712018699E-01  2.500000000000E-01  4.519435469599E-01
+   2   1    -3.283712018699E-01 -2.500000000000E-01 -4.519435469599E-01
+   3   1     1.921513702633E-01  2.500000000000E-01  4.905642840680E-01
+   4   1    -1.921513702633E-01 -2.500000000000E-01 -4.905642840680E-01
+   5   8     2.339362975236E-01  2.500000000000E-01  4.187071242024E-01
+   6   8    -2.339362975236E-01 -2.500000000000E-01 -4.187071242024E-01
+
+ *******************************************************************************
+
+ << INFORMATION >>: FROM NOW ON, ALL COORDINATES REFER TO THE PRIMITIVE CELL
+
+ *******************************************************************************
+
+ LATTICE PARAMETERS  (ANGSTROMS AND DEGREES) - PRIMITIVE CELL
+       A          B          C        ALPHA      BETA     GAMMA        VOLUME
+   10.29488    4.82569   11.09574    90.00000 100.74091  90.00000    541.577504
+
+ INPUT LIST - ATOM N.   2 NOT IRREDUCIBLE
+
+ INPUT LIST - ATOM N.   4 NOT IRREDUCIBLE
+
+ INPUT LIST - ATOM N.   6 NOT IRREDUCIBLE
+
+ COORDINATES OF THE EQUIVALENT ATOMS (FRACTIONAL UNITS)
+
+ N. ATOM EQUIV AT. N.          X                  Y                  Z
+
+   1   1   1    1 H     3.28371201870E-01  2.50000000000E-01  4.51943546960E-01
+   2   1   2    1 H    -3.28371201870E-01 -2.50000000000E-01 -4.51943546960E-01
+
+
+   3   3   1    1 H     1.92151370263E-01  2.50000000000E-01  4.90564284068E-01
+   4   3   2    1 H    -1.92151370263E-01 -2.50000000000E-01 -4.90564284068E-01
+
+
+   5   5   1    8 O     2.33936297524E-01  2.50000000000E-01  4.18707124202E-01
+   6   5   2    8 O    -2.33936297524E-01 -2.50000000000E-01 -4.18707124202E-01
+
+
+ NUMBER OF SYMMETRY OPERATORS         :    4
+ *******************************************************************************
+ * GEOMETRY EDITING - INPUT COORDINATES ARE GIVEN IN ANGSTROM         
+ *******************************************************************************
+
+ GEOMETRY NOW FULLY CONSISTENT WITH THE GROUP
+
+ FRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQ
+
+                       FREQUENCY CALCULATION
+
+ INFORMATION **** INPFREQ **** NUMERICAL DERIVATIVE OF GRADIENT OPTION           2
+ TEMPERATURE FOR THERMO ANALYSIS   50.00 KELVIN -  750.00 KELVIN (POINTS 15)
+ INFORMATION **** INPFREQ **** NEW DEFAULT - IMPOSING ECKART CONDITIONS TO THE HESSIAN
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    11    25    11
+ NO.OF VECTORS CREATED 6999 STARS 1826 RMAX   182.80510 BOHR
+
+ GEOMETRY FOR WAVE FUNCTION - DIMENSIONALITY OF THE SYSTEM    3
+ (NON PERIODIC DIRECTION: LATTICE PARAMETER FORMALLY SET TO 500)
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=   541.577504 - DENSITY  0.110 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+    10.29488149     4.82568899    11.09573888    90.000000 100.740910  90.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    3 - ATOMS IN THE UNIT CELL:    6
+     ATOM              X/A                 Y/B                 Z/C    
+ *******************************************************************************
+   1 T   1 H     3.283712018699E-01  2.500000000000E-01  4.519435469599E-01
+   2 F   1 H    -3.283712018699E-01 -2.500000000000E-01 -4.519435469599E-01
+   3 T   1 H     1.921513702633E-01  2.500000000000E-01  4.905642840680E-01
+   4 F   1 H    -1.921513702633E-01 -2.500000000000E-01 -4.905642840680E-01
+   5 T   8 O     2.339362975236E-01  2.500000000000E-01  4.187071242024E-01
+   6 F   8 O    -2.339362975236E-01 -2.500000000000E-01 -4.187071242024E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ ****    4 SYMMOPS - TRANSLATORS IN FRACTIONAL UNITS
+ **** MATRICES AND TRANSLATORS IN THE CRYSTALLOGRAPHIC REFERENCE FRAME
+   V INV                    ROTATION MATRICES                   TRANSLATORS
+   1   1  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   2   2 -1.00  0.00  0.00 -0.00  1.00  0.00  0.00  0.00 -1.00  0.00  0.50  0.00
+   3   3 -1.00  0.00  0.00  0.00 -1.00 -0.00  0.00  0.00 -1.00  0.00  0.00  0.00
+   4   4  1.00  0.00  0.00  0.00 -1.00 -0.00  0.00  0.00  1.00  0.00  0.50  0.00
+
+ DIRECT LATTICE VECTORS CARTESIAN COMPONENTS (ANGSTROM)
+          X                    Y                    Z
+   0.102948814900E+02   0.630379683216E-15   0.000000000000E+00
+   0.000000000000E+00   0.482568899000E+01   0.000000000000E+00
+  -0.206789252196E+01   0.679418055178E-15   0.109013412849E+02
+
+
+ CARTESIAN COORDINATES - PRIMITIVE CELL
+ *******************************************************************************
+ *      ATOM          X(ANGSTROM)         Y(ANGSTROM)         Z(ANGSTROM)
+ *******************************************************************************
+    1     1 H     2.445971926875E+00  1.206422247500E+00  4.926790846937E+00
+    2     1 H    -2.445971926875E+00 -1.206422247500E+00 -4.926790846937E+00
+    3     1 H     9.637413704385E-01  1.206422247500E+00  5.347808682828E+00
+    4     1 H    -9.637413704385E-01 -1.206422247500E+00 -5.347808682828E+00
+    5     8 O     1.542505128187E+00  1.206422247500E+00  4.564469259367E+00
+    6     8 O    -1.542505128187E+00 -1.206422247500E+00 -4.564469259367E+00
+
+ *******************************************************************************
+ LOCAL ATOMIC FUNCTIONS BASIS SET
+ *******************************************************************************
+   ATOM   X(AU)   Y(AU)   Z(AU)  N. TYPE  EXPONENT  S COEF   P COEF   D/F/G COEF
+ *******************************************************************************
+   1 H    4.622   2.280   9.310
+                                  1 S  
+                                         3.406E+01 6.025E-03 0.000E+00 0.000E+00
+                                         5.124E+00 4.502E-02 0.000E+00 0.000E+00
+                                         1.165E+00 2.019E-01 0.000E+00 0.000E+00
+                                  2 S  
+                                         4.157E-01 1.000E+00 0.000E+00 0.000E+00
+                                  3 S  
+                                         1.795E-01 1.000E+00 0.000E+00 0.000E+00
+                             4-   6 P  
+                                         8.000E-01 0.000E+00 1.000E+00 0.000E+00
+   2 H   -4.622  -2.280  -9.310
+   3 H    1.821   2.280  10.106
+   4 H   -1.821  -2.280 -10.106
+   5 O    2.915   2.280   8.626
+                                 25 S  
+                                         8.020E+03 1.080E-03 0.000E+00 0.000E+00
+                                         1.338E+03 8.040E-03 0.000E+00 0.000E+00
+                                         2.554E+02 5.324E-02 0.000E+00 0.000E+00
+                                         6.922E+01 1.681E-01 0.000E+00 0.000E+00
+                                         2.390E+01 3.581E-01 0.000E+00 0.000E+00
+                                         9.264E+00 3.855E-01 0.000E+00 0.000E+00
+                                         3.851E+00 1.468E-01 0.000E+00 0.000E+00
+                                         1.212E+00 7.280E-02 0.000E+00 0.000E+00
+                            26-  29 SP 
+                                         4.943E+01-8.830E-03 9.580E-03 0.000E+00
+                                         1.047E+01-9.150E-02 6.960E-02 0.000E+00
+                                         3.235E+00-4.020E-02 2.065E-01 0.000E+00
+                                         1.217E+00 3.790E-01 3.470E-01 0.000E+00
+                            30-  33 SP 
+                                         5.000E-01 1.000E+00 1.000E+00 0.000E+00
+                            34-  37 SP 
+                                         1.910E-01 1.000E+00 1.000E+00 0.000E+00
+                            38-  42 D  
+                                         5.000E-01 0.000E+00 0.000E+00 1.000E+00
+   6 O   -2.915  -2.280  -8.626
+ INFORMATION **** SET_MPP **** PCRYSTAL CALCULATION
+ INFORMATION **** READM2 **** NEW DEFAULT: FOCK/KS MATRIX MIXING SET TO 30 %
+ INFORMATION **** READM2 **** NEW DEFAULT: FULL DIRECT SCF MODE
+ INFORMATION **** READM2 **** NEW DEFAULT: COULOMB BIPOLAR BUFFER SET TO 32 Mb
+ INFORMATION **** READM2 **** NEW DEFAULT: EXCHANGE BIPOLAR BUFFER SET TO 32 Mb
+
+ *******************************************************************************
+ NEW DEFAULT: DFT INTEGRATION GRID INCREASED TO XLGRID
+ NEW DEFAULT: LEVEL SHIFTER 6 0
+ IF THE SYSTEM IS A METAL USE KEYWORD NOSHIFT
+ *******************************************************************************
+
+ INFORMATION **** TOLINTEG **** COULOMB AND EXCHANGE SERIES TOLERANCES MODIFIED
+ INFORMATION **** TOLDEE **** SCF TOL ON TOTAL ENERGY SET TO           8
+ INFORMATION **** READM2 ****  FREQCALC - MULLIKEN POPULATION ANALYSIS NOT PERFORMED
+ WARNING **** READM2 **** PROBABLE LOSS IN FREQCALC ACCURACY; SCF TOL LT          10
+ *******************************************************************************
+ N. OF ATOMS PER CELL         6  COULOMB OVERLAP TOL         (T1) 10**   -8
+ NUMBER OF SHELLS            26  COULOMB PENETRATION TOL     (T2) 10**   -8
+ NUMBER OF AO                60  EXCHANGE OVERLAP TOL        (T3) 10**   20
+ N. OF ELECTRONS PER CELL    20  EXCHANGE PSEUDO OVP (F(G))  (T4) 10**   20
+ CORE ELECTRONS PER CELL      4  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**   20
+ N. OF SYMMETRY OPERATORS     4  POLE ORDER IN MONO ZONE                  4
+ *******************************************************************************
+ TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ KOHN-SHAM HAMILTONIAN
+
+ (EXCHANGE)[CORRELATION] FUNCTIONAL:(PBEsol GGA)[PBEsol]
+
+ EIGENVALUE LEVEL SHIFTING OF  0.600 HARTREE
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   8; SYMMOPS:K SPACE   4;G SPACE   4
+
+ *******************************************************************************
+ MAX NUMBER OF SCF CYCLES      50  CONVERGENCE ON DELTAP        10**-18
+ WEIGHT OF F(I) IN F(I+1)      30% CONVERGENCE ON ENERGY        10**- 8
+ EIGENVALUE LEVEL SHIFTING OF  0.600 HARTREE
+ SHRINK. FACT.(MONKH.)    2  2  2  NUMBER OF K POINTS IN THE IBZ      8
+ SHRINKING FACTOR(GILAT NET)    4  NUMBER OF K POINTS(GILAT NET)     30
+ *******************************************************************************
+ *** K POINTS COORDINATES (OBLIQUE COORDINATES IN UNITS OF IS =  2)
+   1-R(  0  0  0)   2-R(  1  0  0)   3-R(  0  1  0)   4-R(  1  1  0)
+   5-R(  0  0  1)   6-R(  1  0  1)   7-R(  0  1  1)   8-R(  1  1  1)
+
+ DIRECT LATTICE VECTORS COMPON. (A.U.)     RECIP. LATTICE VECTORS COMPON. (A.U.) 
+        X            Y            Z              X            Y            Z
+   19.4545066    0.0000000    0.0000000      0.3229681    0.0000000    0.0612643
+    0.0000000    9.1192306    0.0000000     -0.0000000    0.6890039   -0.0000000
+   -3.9077505    0.0000000   20.6005495      0.0000000    0.0000000    0.3050009
+
+ DISK SPACE FOR EIGENVECTORS (FTN 10)       28800 REALS
+
+ SYMMETRY ADAPTION OF THE BLOCH FUNCTIONS ENABLED
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.10 TCPU        0.04
+
+ MATRIX SIZE: P(G)    4720, F(G)    2406, P(G) IRR     893, F(G) IRR     893
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS  27
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.10 TCPU        0.04
+
+ NEIGHBORS OF THE NON-EQUIVALENT ATOMS
+
+ N = NUMBER OF NEIGHBORS AT DISTANCE R
+    ATOM  N     R/ANG      R/AU   NEIGHBORS (ATOM LABELS AND CELL INDICES)
+   1 H    1     0.9734     1.8395    5 O    0 0 0
+   1 H    1     1.5409     2.9118    3 H    0 0 0
+   1 H    2     4.2476     8.0268    2 H    1 0 1    2 H    1 1 1
+   1 H    2     4.8257     9.1192    1 H    0-1 0    1 H    0 1 0
+   1 H    2     4.9229     9.3029    5 O    0 1 0    5 O    0-1 0
+   1 H    2     5.0657     9.5728    3 H    0 1 0    3 H    0-1 0
+
+   3 H    1     0.9740     1.8405    5 O    0 0 0
+   3 H    1     1.5409     2.9118    1 H    0 0 0
+   3 H    2     4.6720     8.8287    4 H    0 0 1    4 H    0 1 1
+   3 H    2     4.8257     9.1192    3 H    0-1 0    3 H    0 1 0
+   3 H    2     4.9230     9.3031    5 O    0 1 0    5 O    0-1 0
+   3 H    2     5.0657     9.5728    1 H    0-1 0    1 H    0 1 0
+
+   5 O    1     0.9734     1.8395    1 H    0 0 0
+   5 O    1     0.9740     1.8405    3 H    0 0 0
+   5 O    2     4.8257     9.1192    5 O    0-1 0    5 O    0 1 0
+   5 O    2     4.9229     9.3029    1 H    0-1 0    1 H    0 1 0
+   5 O    2     4.9230     9.3031    3 H    0-1 0    3 H    0 1 0
+   5 O    2     5.0769     9.5940    2 H    1 0 1    2 H    1 1 1
+
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   6
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.12 TCPU        0.06
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.12 TCPU        0.06
+
+ *******************************************************************************
+ *                                                                             *
+ *                                                                             *
+ *         FFFFF  RRRR   EEEE   QQQ   U   U  EEEE  N   N   CCC  Y   Y          *
+ *         F      R   R  E     Q   Q  U   U  E     NN  N  C      Y Y           *
+ *         FFF    RRRR   EEEE  Q   Q  U   U  EEEE  N N N  C       Y            *
+ *         F      R   R  E     Q  QQ  U   U  E     N  NN  C       Y            *
+ *         F      R   R  EEEE   QQ Q   UUU   EEEE  N   N   CCC    Y            *
+ *                                                                             *
+ *                                                                             *
+ * CALCULATION OF PHONON FREQUENCIES AT THE GAMMA POINT.                       *
+ *                                                                             *
+ * SYMMETRY IS EXPLOITED TO BUILD THE TOTAL HESSIAN MATRIX.                    *
+ * (F. PASCALE PHD THESIS TURIN-PARIS 2002)                                    *
+ *                                                                             *
+ *******************************************************************************
+
+
+ * INTENSITIES COMPUTED VIA THE BERRY PHASE APPROACH                           *
+ *                                                                             *
+ * REFERENCES TO BE QUOTED WHEN USING THIS MODULE:                             *
+ *                                                                             *
+ * F. Pascale, C.M. Zicovich-Wilson, F. Lopez, B. Civalleri                    *
+ * R. Orlando, R. Dovesi                                                       *
+ * The calculation of the vibration frequencies of crystalline                 *
+ * compounds and its implementation in the CRYSTAL code                        *
+ * J. Comput. Chem. 25 (2004) 888-897                                          *
+ *                                                                             *
+ * C.M. Zicovich-Wilson, F. Pascale, C. Roetti, V.R. Saunders,                 *
+ * R. Orlando, R. Dovesi                                                       *
+ * The calculation of the vibration frequencies of alpha-quartz:               *
+ * the effect of hamiltonian and basis set                                     *
+ * J. Comput. Chem. 25 (2004) 1873-1881                                        *
+ *******************************************************************************
+
+
+
+ ATOMS ISOTOPIC MASS (AMU) FOR FREQUENCY CALCULATION 
+
+    1 H       1.0078    2 H       1.0078    3 H       1.0078    4 H       1.0078
+    5 O      15.9949    6 O      15.9949
+
+ INFORMATION CONCERNING THE SCF+GRADIENT CALCULATIONS REQUIRED FOR
+ GENERATING FREQUENCIES. IN PRINCIPLE 3N+1 SCF + GRADIENT
+ CALCULATIONS  ARE REQUIRED;
+ FOR EACH OF THEM THE REMAINING POINT SYMMETRY IS INDICATED.
+ POINT SYMMETRY PERMITS TO GENERATE GRADIENTS FOR DISPLACEMENT B 
+ STARTING FROM THE GRADIENT GENERATED BY DISPLACEMENT A.
+
+   N   LABEL SYMBOL DISPLACEMENT     SYM. 
+
+   1     EQUILIBRIUM GEOMETRY            4
+
+   2      1   H            DX           2
+   3      1   H            DY           1
+   4      1   H            DZ           2
+   5      3   H            DX           2
+   6      3   H            DY           1
+   7      3   H            DZ           2
+   8      5   O            DX           2
+   9      5   O            DY           1
+  10      5   O            DZ           2
+ USE OF RESIDUAL SYMMETRY AFTER DISPLACEMENT
+
+ NUMERICAL GRADIENT COMPUTED WITH A DOUBLE DISPLACEMENT (+-DX) FOR EACH
+ CARTESIAN COORDINATE WITH RESPECT TO THE EQUILIBRIUM CONFIGURATION
+ DX=  0.003 ANGSTROM
+ NUMBER OF IRREDUCIBLE ATOMS                     3
+ NUMBER OF SCF+GRADIENT CALCULATIONS            19
+
+  ATOM  SYMOP  ORDER
+    1      2      2
+    3      2      2
+    5      2      2
+
+ ATOM  : IRREDUCIBLE ATOM
+ SYMOP : NUMBER OF SYMMETRY OPERATORS THAT DOESN'T MOVE THE IRREDUCIBLE ATOM
+ ORDER : MAXIMUM ORDER AMONG THE OPERATORS OF THE IRREDUCIBLE ATOM
+
+ *******************************************************************************
+
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    11    25    11
+ NO.OF VECTORS CREATED 6999 STARS 1826 RMAX   182.80510 BOHR
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   8; SYMMOPS:K SPACE   4;G SPACE   4
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.13 TCPU        0.06
+
+ MATRIX SIZE: P(G)    4720, F(G)    2406, P(G) IRR     893, F(G) IRR     893
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS  27
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.13 TCPU        0.06
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   6
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.13 TCPU        0.06
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.14 TCPU        0.07
+ INFORMATION **** EXCBUF **** EXCH. BIPO BUFFER: WORDS USED =           0
+
+ DFT PARAMETERS
+
+     ATOM       ELECTRONS   NET CHARGE   R(ANGSTROM)
+   1   1  H       1.0000      0.0000     1.11000000
+   5   8  O       8.0000      0.0000     0.74000000
+
+ SIZE OF GRID=      54734
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MAKE_GRID2  TELAPSE        0.22 TCPU        0.15
+ BECKE WEIGHT FUNCTION
+ RADSAFE =     2.00
+ TOLERANCES - DENSITY:10**- 6; POTENTIAL:10**- 9; GRID WGT:10**-14
+
+ RADIAL INTEGRATION  - INTERVALS (POINTS,UPPER LIMIT):            1( 75,  4.0*R)
+
+ ANGULAR INTEGRATION - INTERVALS (ACCURACY LEVEL [N. POINTS] UPPER LIMIT):
+  1(  4[  86]   0.2)  2(  8[ 194]   0.5)  3( 12[ 350]   0.9)  4( 16[ 974]   3.5)
+  5( 12[ 350]9999.0)
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_CALC    TELAPSE        0.26 TCPU        0.19
+
+ *******************************************************************************
+ Monohydrate - relaxed in CRYSTAL                                                
+ CRYSTAL - SCF - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ *******************************************************************************
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   8; SYMMOPS:K SPACE   4;G SPACE   4
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SDIK        TELAPSE        0.27 TCPU        0.20
+
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+         ATOMIC WAVEFUNCTION(S)
+
+
+ NUCLEAR CHARGE  1.0  SYMMETRY SPECIES            S
+ N. ELECTRONS    1.0  NUMBER OF PRIMITIVE GTOS    5
+                      NUMBER OF CONTRACTED GTOS   3
+                      NUMBER OF CLOSED SHELLS     0
+                      OPEN SHELL OCCUPATION       1
+
+  ZNUC SCFIT  TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
+   1.0   1   -4.972863497E-01  5.223199932E-01 -1.952072209E+00  6.6E-16
+
+ NUCLEAR CHARGE  8.0  SYMMETRY SPECIES            S    P
+ N. ELECTRONS    8.0  NUMBER OF PRIMITIVE GTOS   14    6
+                      NUMBER OF CONTRACTED GTOS   4    3
+                      NUMBER OF CLOSED SHELLS     2    0
+                      OPEN SHELL OCCUPATION       0    4
+
+  ZNUC SCFIT  TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
+   8.0  13   -7.480076780E+01  7.462318851E+01 -2.002379680E+00  2.9E-06
+
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.28 TCPU        0.21
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.30 TCPU        0.22
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.31 TCPU        0.23
+ NUMERICALLY INTEGRATED DENSITY     19.9999870756
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.34 TCPU        0.27
+ CYC   0 ETOT(AU) -1.521928445583E+02 DETOT -1.52E+02 tst  0.00E+00 PX  1.00E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.36 TCPU        0.28
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -3.7653586E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  5.1001893E-03 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.36 TCPU        0.29
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.36 TCPU        0.29
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.37 TCPU        0.30
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.39 TCPU        0.32
+ NUMERICALLY INTEGRATED DENSITY     19.9999802141
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.44 TCPU        0.36
+ CYC   1 ETOT(AU) -1.520625125283E+02 DETOT  1.30E-01 tst  0.00E+00 PX  1.00E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.44 TCPU        0.36
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -1.7064293E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  4.1218527E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.44 TCPU        0.37
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.44 TCPU        0.37
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.45 TCPU        0.37
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.46 TCPU        0.39
+ NUMERICALLY INTEGRATED DENSITY     19.9999682938
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.51 TCPU        0.44
+ CYC   2 ETOT(AU) -1.522043448875E+02 DETOT -1.42E-01 tst  1.36E-02 PX  1.06E-01
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.51 TCPU        0.44
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.4444979E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.7971085E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.51 TCPU        0.44
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.51 TCPU        0.44
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.52 TCPU        0.44
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.53 TCPU        0.45
+ NUMERICALLY INTEGRATED DENSITY     19.9999670170
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.58 TCPU        0.50
+ CYC   3 ETOT(AU) -1.522106560913E+02 DETOT -6.31E-03 tst  2.37E-04 PX  2.06E-02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.58 TCPU        0.50
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.6099776E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.4678929E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.58 TCPU        0.50
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.58 TCPU        0.50
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.59 TCPU        0.51
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.60 TCPU        0.52
+ NUMERICALLY INTEGRATED DENSITY     19.9999680870
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.64 TCPU        0.57
+ CYC   4 ETOT(AU) -1.522121613756E+02 DETOT -1.51E-03 tst  7.38E-05 PX  1.42E-02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.64 TCPU        0.57
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5314941E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6503969E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.64 TCPU        0.57
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.64 TCPU        0.57
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.65 TCPU        0.58
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.66 TCPU        0.59
+ NUMERICALLY INTEGRATED DENSITY     19.9999681847
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.71 TCPU        0.64
+ CYC   5 ETOT(AU) -1.522122646691E+02 DETOT -1.03E-04 tst  1.52E-05 PX  2.99E-03
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.71 TCPU        0.64
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5254046E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6606569E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.71 TCPU        0.64
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.71 TCPU        0.64
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.72 TCPU        0.65
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.73 TCPU        0.66
+ NUMERICALLY INTEGRATED DENSITY     19.9999681694
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.78 TCPU        0.70
+ CYC   6 ETOT(AU) -1.522122826424E+02 DETOT -1.80E-05 tst  6.88E-06 PX  2.50E-03
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.78 TCPU        0.70
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5366438E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6313350E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.78 TCPU        0.70
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.78 TCPU        0.71
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.79 TCPU        0.71
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.80 TCPU        0.72
+ NUMERICALLY INTEGRATED DENSITY     19.9999682391
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.83 TCPU        0.76
+ CYC   7 ETOT(AU) -1.522122879244E+02 DETOT -5.28E-06 tst  1.47E-06 PX  1.00E-03
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.83 TCPU        0.76
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5376474E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6266752E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.83 TCPU        0.76
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.83 TCPU        0.76
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.84 TCPU        0.77
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.85 TCPU        0.77
+ NUMERICALLY INTEGRATED DENSITY     19.9999682861
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.87 TCPU        0.80
+ CYC   8 ETOT(AU) -1.522122891699E+02 DETOT -1.25E-06 tst  5.07E-07 PX  5.48E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.87 TCPU        0.80
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5369183E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6274564E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.87 TCPU        0.80
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.87 TCPU        0.80
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.88 TCPU        0.81
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.89 TCPU        0.81
+ NUMERICALLY INTEGRATED DENSITY     19.9999683059
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.92 TCPU        0.84
+ CYC   9 ETOT(AU) -1.522122895880E+02 DETOT -4.18E-07 tst  2.16E-07 PX  3.92E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.92 TCPU        0.84
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5370746E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6269027E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.92 TCPU        0.84
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.92 TCPU        0.84
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.92 TCPU        0.85
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.93 TCPU        0.86
+ NUMERICALLY INTEGRATED DENSITY     19.9999683177
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.96 TCPU        0.88
+ CYC  10 ETOT(AU) -1.522122897281E+02 DETOT -1.40E-07 tst  7.72E-08 PX  2.33E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.96 TCPU        0.88
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5372253E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6265148E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.96 TCPU        0.88
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.96 TCPU        0.88
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        0.96 TCPU        0.89
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.97 TCPU        0.90
+ NUMERICALLY INTEGRATED DENSITY     19.9999683254
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.99 TCPU        0.92
+ CYC  11 ETOT(AU) -1.522122897772E+02 DETOT -4.91E-08 tst  2.68E-08 PX  1.30E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.99 TCPU        0.92
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5372374E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6264686E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.99 TCPU        0.92
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.99 TCPU        0.92
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        1.00 TCPU        0.93
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.01 TCPU        0.93
+ NUMERICALLY INTEGRATED DENSITY     19.9999683297
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.03 TCPU        0.96
+ CYC  12 ETOT(AU) -1.522122897940E+02 DETOT -1.68E-08 tst  9.82E-09 PX  7.83E-05
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        1.03 TCPU        0.96
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5372384E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6264570E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        1.03 TCPU        0.96
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        1.03 TCPU        0.96
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        1.04 TCPU        0.96
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.05 TCPU        0.97
+ NUMERICALLY INTEGRATED DENSITY     19.9999683322
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.07 TCPU        1.00
+ CYC  13 ETOT(AU) -1.522122897998E+02 DETOT -5.81E-09 tst  3.63E-09 PX  4.67E-05
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        1.07 TCPU        1.00
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     10; K    1; EIG -2.5372475E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     11; K    1; EIG  2.6264320E-02 AU
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        1.07 TCPU        1.00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        1.07 TCPU        1.00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLX2     TELAPSE        1.08 TCPU        1.01
+ ::: PSEUDO TOTAL   ENERGY                        -1.3427745400442E+02
+ ::: VIRIAL COEFFICIENT                            1.0609983265537E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.09 TCPU        1.01
+ NUMERICALLY INTEGRATED DENSITY     19.9999683336
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.12 TCPU        1.05
+ CYC  14 ETOT(AU) -1.522122898018E+02 DETOT -1.98E-09 tst  1.32E-09 PX  4.67E-05
+
+ == SCF ENDED - CONVERGENCE ON ENERGY      E(AU) -1.5221228980179E+02 CYCLES  14
+
+
+ ENERGY EXPRESSION=HARTREE+FOCK EXCH*0.00000+(PBESOL     EXCH)*1.00000+PBESOL     CORR
+
+
+ TOTAL ENERGY(DFT)(AU)( 14) -1.5221228980179E+02 DE-2.0E-09 tester 1.3E-09
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT EDFT        TELAPSE        1.12 TCPU        1.05
+
+ *******************************************************************************
+ *                             FORCE CALCULATION                               *
+ *******************************************************************************
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFG      TELAPSE        1.24 TCPU        1.17
+ INFORMATION **** EXCPOG **** EXCH. BIPO BUFFER LENGTH (WORDS) =           0
+ INFORMATION **** GENPOG **** BIPO BUFFER LENGTH (WORDS) =       49600
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELXG      TELAPSE        1.27 TCPU        1.20
+
+ CARTESIAN FORCES IN HARTREE/BOHR (ANALYTICAL)
+   ATOM                     X                   Y                   Z
+   1   1            -8.402158601939E-05 -2.139406985620E-16  1.714559415734E-04
+   2   1             8.402158601939E-05  7.439162728005E-16 -1.714559415734E-04
+   3   1            -2.761274280405E-05  5.197015856440E-16  1.891647689076E-04
+   4   1             2.761274280361E-05  6.138210269028E-16 -1.891647689076E-04
+   5   8            -9.283336255628E-05 -2.567141979521E-16  1.315220544105E-04
+   6   8             9.283336255617E-05 -1.378937792182E-15 -1.315220544105E-04
+
+ RESULTANT FORCE    -5.551115123126E-16  2.784619665139E-17  0.000000000000E+00
+
+ SYMMETRY ALLOWED FORCES (ANALYTICAL) (DIRECTION, FORCE)
+
+    1 -1.1882447E-04    2  2.4247532E-04    3 -3.9050315E-05    4  2.6751938E-04
+    5 -1.3128620E-04    6  1.8600027E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT TOTGRA      TELAPSE        1.29 TCPU        1.21
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+                   FORCE CONSTANT MATRIX - NUMERICAL ESTIMATE
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+ MAX ABS(DGRAD): MAXIMUM ABSOLUTE GRADIENT DIFFERENCE WITH RESPECT TO
+                 THE CENTRAL POINT
+ DE:             ENERGY DIFFERENCE WITH RESPECT TO THE CENTRAL POINT
+                 (DE IS EXPECTED TO BE POSITIVE FOR ALL DISPLACEMENTS)
+
+   ATOM      MAX ABS(DGRAD)       TOTAL ENERGY (AU)  N.CYC      DE       SYM
+    CENTRAL POINT             -1.522122898018E+02    14     0.0000E+00     4
+    1 H  DX   2.6021E-03      -1.522122819774E+02     5     7.8244E-06     2
+    1 H  DX   2.6308E-03      -1.522122828388E+02     6     6.9630E-06     2
+    1 H  DY   1.0484E-05      -1.522122898266E+02     4    -2.4761E-08     1
+    1 H  DY   1.0514E-05      -1.522122898266E+02     4    -2.4764E-08     1
+    1 H  DZ   1.0751E-03      -1.522122891905E+02     5     6.1128E-07     2
+    1 H  DZ   1.0704E-03      -1.522122872975E+02     5     2.5043E-06     2
+    3 H  DX   1.2950E-03      -1.522122859917E+02     5     3.8101E-06     2
+    3 H  DX   1.2871E-03      -1.522122863233E+02     5     3.4785E-06     2
+    3 H  DY   1.2596E-05      -1.522122898124E+02     4    -1.0618E-08     1
+    3 H  DY   1.2596E-05      -1.522122898124E+02     4    -1.0618E-08     1
+    3 H  DZ   1.8942E-03      -1.522122856132E+02     5     4.1886E-06     2
+    3 H  DZ   1.8998E-03      -1.522122834569E+02     5     6.3449E-06     2
+    5 O  DX   3.6262E-03      -1.522122790731E+02     5     1.0729E-05     2
+    5 O  DX   3.5930E-03      -1.522122802002E+02     5     9.6016E-06     2
+    5 O  DY   1.4781E-05      -1.522122898635E+02     5    -6.1700E-08     1
+    5 O  DY   1.4784E-05      -1.522122898635E+02     5    -6.1698E-08     1
+    5 O  DZ   2.4712E-03      -1.522122835737E+02     6     6.2281E-06     2
+    5 O  DZ   2.4687E-03      -1.522122820452E+02     6     7.7566E-06     2
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    11    25    11
+ NO.OF VECTORS CREATED 6999 STARS 1826 RMAX   182.80510 BOHR
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   8; SYMMOPS:K SPACE   4;G SPACE   4
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE       21.53 TCPU       21.42
+
+ MATRIX SIZE: P(G)    4720, F(G)    2406, P(G) IRR     893, F(G) IRR     893
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS  27
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE       21.53 TCPU       21.42
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   6
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE       21.53 TCPU       21.42
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE       21.53 TCPU       21.42
+
+ +++ SYMMETRY ADAPTION OF VIBRATIONAL MODES +++
+
+ SYMMETRY INFORMATION:
+ K-LITTLE GROUP: CLASS TABLE, CHARACTER TABLE.
+ IRREP-(DIMENSION, NO. IRREDUCIBLE SETS)
+ [WARNINGS: (1) ONLY ACTIVE IRREPS ARE GENERATED AND LISTED.
+            (2) ONLY RELEVANT CLASSES ARE CONSIDERED IN THE CHARACTER TABLE
+            (3) SYMBOLS MAY NOT FULLY COINCIDE WITH THOSE FROM TEXT BOOKS.]
+
+ (P, D, RP, RD, STAND FOR PAIRING, DOUBLING, REAL PAIRING AND REAL DOUBLING 
+ OF THE IRREPS (SEE MANUAL))
+
+ CLASS  | GROUP OPERATORS (SEE SYMMOPS KEYWORD)
+ --------------------------------------------------------------------
+ C2     |   2;
+ I      |   3;
+ SGH    |   4;
+
+ IRREP/CLA      E     C2      I    SGH
+ -------------------------------------
+  MULTIP |      1      1      1      1
+ -------------------------------------
+    Ag   |   1.00   1.00   1.00   1.00
+    Bg   |   1.00  -1.00   1.00  -1.00
+    Au   |   1.00   1.00  -1.00  -1.00
+    Bu   |   1.00  -1.00  -1.00   1.00
+ 
+ Ag -(1,   6); Bg -(1,   3);
+ Au -(1,   3); Bu -(1,   6);
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+ EIGENVALUES (EIGV) OF THE MASS WEIGHTED HESSIAN MATRIX AND HARMONIC TRANSVERSE
+ OPTICAL (TO) FREQUENCIES. IRREP LABELS REFER TO SYMMETRY REPRESENTATION
+ ANALYSIS; A AND I INDICATE WHETHER THE MODE IS ACTIVE OR INACTIVE,
+ RESPECTIVELY, FOR IR AND RAMAN; INTEGRATED IR INTENSITIES IN BRACKETS.
+
+ CONVERSION FACTORS FOR FREQUENCIES:
+      1 CM**(-1) =   0.2194746E+06 HARTREE
+      1 THZ      =   0.2997925E-01 CM**(-1)
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+    MODES         EIGV          FREQUENCIES     IRREP  IR   INTENS    RAMAN
+             (HARTREE**2)   (CM**-1)     (THZ)             (KM/MOL)
+    1-   1   -0.6985E-06   -183.4283   -5.4990  (Au )   A (     0.00)   I
+    2-   2   -0.4480E-06   -146.8979   -4.4039  (Bg )   I (     0.00)   A
+    3-   3   -0.3428E-07    -40.6336   -1.2182  (Au )   A (     0.00)   I
+    4-   4   -0.1803E-07    -29.4740   -0.8836  (Ag )   I (     0.00)   A
+    5-   5   -0.4452E-08    -14.6445   -0.4390  (Ag )   I (     0.00)   A
+    6-   6   -0.2186E-19      0.0000    0.0000  (Bu )   A (     0.00)   I
+    7-   7   -0.1181E-19      0.0000    0.0000  (Bu )   A (     0.00)   I
+    8-   8    0.1487E-22      0.0000    0.0000  (Au )   A (     0.00)   I
+    9-   9    0.1342E-07     25.4248    0.7622  (Bg )   I (     0.00)   A
+   10-  10    0.1255E-06     77.7367    2.3305  (Bg )   I (     0.00)   A
+   11-  11    0.2329E-06    105.9261    3.1756  (Bu )   A (     0.00)   I
+   12-  12    0.4814E-06    152.2748    4.5651  (Ag )   I (     0.00)   A
+   13-  13    0.5199E-04   1582.4481   47.4406  (Ag )   I (     0.00)   A
+   14-  14    0.5236E-04   1588.0522   47.6086  (Bu )   A (     0.00)   I
+   15-  15    0.2863E-03   3713.3694  111.3240  (Bu )   A (     0.00)   I
+   16-  16    0.2863E-03   3713.5693  111.3300  (Ag )   I (     0.00)   A
+   17-  17    0.3062E-03   3840.5546  115.1369  (Bu )   A (     0.00)   I
+   18-  18    0.3065E-03   3842.2861  115.1888  (Ag )   I (     0.00)   A
+
+ NORMAL MODES NORMALIZED TO CLASSICAL AMPLITUDES
+
+ FREQ(CM**-1)   -183.43   -146.90    -40.63    -29.47    -14.64      0.00
+
+ AT.   1 H  X     0.0000    0.0000    0.0000    0.2735   -0.1970    0.0031
+            Y     0.5277   -0.5466   -0.3617    0.0000    0.0000    0.0000
+            Z     0.0000    0.0000    0.0000    0.2349    0.5378    0.1666
+ AT.   2 H  X     0.0000    0.0000    0.0000   -0.2735    0.1970    0.0031
+            Y     0.5277    0.5466   -0.3617    0.0000    0.0000    0.0000
+            Z     0.0000    0.0000    0.0000   -0.2349   -0.5378    0.1666
+ AT.   3 H  X     0.0000    0.0000    0.0000    0.2169   -0.2390    0.0031
+            Y     0.1387   -0.1713    1.1406    0.0000    0.0000    0.0000
+            Z     0.0000    0.0000    0.0000    0.0322    0.3856    0.1666
+ AT.   4 H  X     0.0000    0.0000    0.0000   -0.2169    0.2390    0.0031
+            Y     0.1387    0.1713    1.1406    0.0000    0.0000    0.0000
+            Z     0.0000    0.0000    0.0000   -0.0322   -0.3856    0.1666
+ AT.   5 O  X     0.0000    0.0000    0.0000    0.3228   -0.1592    0.0031
+            Y    -0.0420    0.0703   -0.0491    0.0000    0.0000    0.0000
+            Z     0.0000    0.0000    0.0000    0.1108    0.4450    0.1666
+ AT.   6 O  X     0.0000    0.0000    0.0000   -0.3228    0.1592    0.0031
+            Y    -0.0420   -0.0703   -0.0491    0.0000    0.0000    0.0000
+            Z     0.0000    0.0000    0.0000   -0.1108   -0.4450    0.1666
+
+ FREQ(CM**-1)      0.00      0.00     25.42     77.74    105.93    152.27
+
+ AT.   1 H  X     0.1666    0.0000    0.0000    0.0000    0.1673   -0.1534
+            Y     0.0000    0.1666   -0.6438    0.2612    0.0000    0.0000
+            Z    -0.0031    0.0000    0.0000    0.0000   -0.4935    0.3945
+ AT.   2 H  X     0.1666    0.0000    0.0000    0.0000    0.1673    0.1534
+            Y     0.0000    0.1666    0.6438   -0.2612    0.0000    0.0000
+            Z    -0.0031    0.0000    0.0000    0.0000   -0.4935   -0.3945
+ AT.   3 H  X     0.1666    0.0000    0.0000    0.0000    0.4009   -0.3421
+            Y     0.0000    0.1666   -0.1974   -0.8368    0.0000    0.0000
+            Z    -0.0031    0.0000    0.0000    0.0000    0.3312   -0.2877
+ AT.   4 H  X     0.1666    0.0000    0.0000    0.0000    0.4009    0.3421
+            Y     0.0000    0.1666    0.1974    0.8368    0.0000    0.0000
+            Z    -0.0031    0.0000    0.0000    0.0000    0.3312    0.2877
+ AT.   5 O  X     0.1666    0.0000    0.0000    0.0000   -0.0358    0.0149
+            Y     0.0000    0.1666   -0.3456   -0.0005    0.0000    0.0000
+            Z    -0.0031    0.0000    0.0000    0.0000    0.0102   -0.0248
+ AT.   6 O  X     0.1666    0.0000    0.0000    0.0000   -0.0358   -0.0149
+            Y     0.0000    0.1666    0.3456    0.0005    0.0000    0.0000
+            Z    -0.0031    0.0000    0.0000    0.0000    0.0102    0.0248
+
+ FREQ(CM**-1)   1582.45   1588.05   3713.37   3713.57   3840.55   3842.29
+
+ AT.   1 H  X    -0.0464   -0.0464    0.0807    0.0811    0.0820    0.0815
+            Y     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+            Z     0.1224    0.1233    0.0251    0.0254    0.0327    0.0326
+ AT.   2 H  X     0.0464   -0.0464    0.0807   -0.0811    0.0820   -0.0815
+            Y     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+            Z    -0.1224    0.1233    0.0251   -0.0254    0.0327   -0.0326
+ AT.   3 H  X     0.1056    0.1045   -0.0596   -0.0592    0.0480    0.0484
+            Y     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+            Z     0.0815    0.0806    0.0693    0.0690   -0.0657   -0.0660
+ AT.   4 H  X    -0.1056    0.1045   -0.0596    0.0592    0.0480   -0.0484
+            Y     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+            Z    -0.0815    0.0806    0.0693   -0.0690   -0.0657    0.0660
+ AT.   5 O  X    -0.0037   -0.0037   -0.0013   -0.0014   -0.0082   -0.0082
+            Y     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+            Z    -0.0128   -0.0129   -0.0059   -0.0059    0.0021    0.0021
+ AT.   6 O  X     0.0037   -0.0037   -0.0013    0.0014   -0.0082    0.0082
+            Y     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+            Z     0.0128   -0.0129   -0.0059    0.0059    0.0021   -0.0021
+
+ ESTIMATED NUMBER OF IMAGINARY FREQS    5
+
+
+ *******************************************************************************
+
+ VIBRATIONAL TEMPERATURES (K) [MODE NUMBER;IRREP]
+
+ TO MODES
+    36.6 [   9;Bg ]   111.8 [  10;Bg ]   152.4 [  11;Bu ]   219.1 [  12;Ag ]
+  2276.8 [  13;Ag ]  2284.9 [  14;Bu ]  5342.7 [  15;Bu ]  5343.0 [  16;Ag ]
+  5525.7 [  17;Bu ]  5528.2 [  18;Ag ]
+
+ *******************************************************************************
+
+ HARMONIC VIBRATIONAL CONTRIBUTIONS TO THERMODYNAMIC FUNCTIONS AT GIVEN
+ TEMPERATURE AND PRESSURE:
+
+ (EL = ELECTRONIC ENERGY
+  E0 = ZERO-POINT ENERGY
+  ET = THERMAL CONTRIBUTION TO THE VIBRATIONAL ENERGY
+  PV = PRESSURE * VOLUME
+  TS = TEMPERATURE * ENTROPY)
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ EL            :    -152.212289801790   -4141.906975988428     -399633.31055605
+ E0            :       0.042468785474       1.155634404076         111.50178055
+
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =   50.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.000182591404       0.004968564705           0.47939366
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.000314051240       0.008545768687           0.82454141
+ ET+PV-TS      :      -0.000118873008      -0.003234699009          -0.31210104
+ EL+E0+ET+PV-TS:    -152.169939889324   -4140.754576283361     -399522.12087654
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.006281024791       0.170915373743          16.49082827
+ HEAT CAPACITY :       0.007468453423       0.203226949500          19.60842170
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  100.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.000655970207       0.017849856794           1.72224954
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.001271262365       0.034592807606           3.33769887
+ ET+PV-TS      :      -0.000602705331      -0.016400445839          -1.58240262
+ EL+E0+ET+PV-TS:    -152.170423721647   -4140.767742030191     -399523.39117813
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.012712623646       0.345928076063          33.37698868
+ HEAT CAPACITY :       0.010761671225       0.292839961722          28.25476382
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  150.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.001222776305       0.033273434861           3.21039874
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.002594361075       0.070596153888           6.81149404
+ ET+PV-TS      :      -0.001358997943      -0.036980214054          -3.56804860
+ EL+E0+ET+PV-TS:    -152.171180014258   -4140.788321798404     -399525.37682410
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.017295740499       0.470641025917          45.40996028
+ HEAT CAPACITY :       0.011742656826       0.319533937020          30.83034115
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  200.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.001821015149       0.049552341395           4.78107460
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.004147016907       0.112846067024          10.88799136
+ ET+PV-TS      :      -0.002313414931      -0.062951220656          -6.07387005
+ EL+E0+ET+PV-TS:    -152.172134431247   -4140.814292805008     -399527.88264555
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.020735084535       0.564230335120          54.43995678
+ HEAT CAPACITY :       0.012138935219       0.330317220319          31.87076993
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  250.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.002434120906       0.066235797214           6.39078354
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.005867580967       0.159664995332          15.40533166
+ ET+PV-TS      :      -0.003420873234      -0.093086693145          -8.98150141
+ EL+E0+ET+PV-TS:    -152.173241889550   -4140.844428277496     -399530.79027692
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.023470323869       0.638659981326          61.62132663
+ HEAT CAPACITY :       0.012375450830       0.336753137278          32.49174157
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  300.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.003058503018       0.083226098254           8.03009854
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.007723936849       0.210179006955          20.27919334
+ ET+PV-TS      :      -0.004652847004      -0.126610403728         -12.21604809
+ EL+E0+ET+PV-TS:    -152.174473863320   -4140.877951988080     -399534.02482359
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.025746456163       0.700596689850          67.59731113
+ HEAT CAPACITY :       0.012605566009       0.343014889633          33.09590889
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  350.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.003695544193       0.100560869911           9.70264991
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.009698467903       0.263908728511          25.46332389
+ ET+PV-TS      :      -0.005990336883      -0.163005353627         -15.72762727
+ EL+E0+ET+PV-TS:    -152.175811353199   -4140.914346937979     -399537.53640277
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.027709908295       0.754024938602          72.75235398
+ HEAT CAPACITY :       0.012886052976       0.350647328054          33.83232732
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  400.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.004348071783       0.118317048347          11.41586086
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.011780826014       0.320572573439          30.93055434
+ ET+PV-TS      :      -0.007420167404      -0.201913020119         -19.48164677
+ EL+E0+ET+PV-TS:    -152.177241183720   -4140.953254604471     -399541.29042228
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.029452065035       0.801431433597          77.32638585
+ HEAT CAPACITY :       0.013223711908       0.359835494708          34.71885072
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  450.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.005018639580       0.136564125760          13.17643636
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.013964064589       0.379981515357          36.66264641
+ ET+PV-TS      :      -0.008932838182      -0.243074884624         -23.45316334
+ EL+E0+ET+PV-TS:    -152.178753854498   -4140.994416468975     -399545.26193885
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.031031254642       0.844403367459          81.47254758
+ HEAT CAPACITY :       0.013604773164       0.370204698649          35.71932691
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  500.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.005708993543       0.155349612139          14.98896044
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.016242799121       0.441989034383          42.64546308
+ ET+PV-TS      :      -0.010521218751      -0.286296917271         -27.62345594
+ EL+E0+ET+PV-TS:    -152.180342235067   -4141.037638501623     -399549.43223144
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.032485598243       0.883978068766          85.29092617
+ HEAT CAPACITY :       0.014012675489       0.381304285184          36.79027431
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  550.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.006420150286       0.174701170910          16.85610220
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.018612488292       0.506471554935          48.86708112
+ ET+PV-TS      :      -0.012179751179      -0.331427879053         -31.97793221
+ EL+E0+ET+PV-TS:    -152.182000767495   -4141.082769463404     -399553.78670772
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.033840887803       0.920857372610          88.84923841
+ HEAT CAPACITY :       0.014435359169       0.392806092857          37.90003016
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  600.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.007152664135       0.194633886116          18.77931704
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.021069214043       0.573322461273          55.31721368
+ ET+PV-TS      :      -0.013903963081      -0.378346070184         -36.50484993
+ EL+E0+ET+PV-TS:    -152.183724979397   -4141.129687654536     -399558.31362543
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.035115356739       0.955537435455          92.19535613
+ HEAT CAPACITY :       0.014866255737       0.404531384579          39.03134894
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  650.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.007906868021       0.215156817211          20.75947906
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.023609621195       0.642450454266          61.98705171
+ ET+PV-TS      :      -0.015690166347      -0.426951132082         -41.19452594
+ EL+E0+ET+PV-TS:    -152.185511182663   -4141.178292716434     -399563.00330144
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.036322494146       0.988385314255          95.36469494
+ HEAT CAPACITY :       0.015302747434       0.416408927497          40.17735773
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  700.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.008683022079       0.236277042868          22.79727126
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.026230873325       0.713778350950          68.86914821
+ ET+PV-TS      :      -0.017535264418      -0.477158803109         -46.03883024
+ EL+E0+ET+PV-TS:    -152.187356280734   -4141.228500387460     -399567.84760575
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.037472676178       1.019683358500          98.38449744
+ HEAT CAPACITY :       0.015744248103       0.428422771486          41.33651757
+
+ *******************************************************************************
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS WITH VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  750.00 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.009481376488       0.258001370778          24.89335046
+ PV            :       0.000012586827       0.000342504973           0.03304671
+ TS            :       0.028930585756       0.787241260996          75.95724220
+ ET+PV-TS      :      -0.019436622441      -0.528897385245         -51.03084503
+ EL+E0+ET+PV-TS:    -152.189257638757   -4141.280238969597     -399572.83962053
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.038574114341       1.049655014661         101.27632293
+ HEAT CAPACITY :       0.016190758385       0.440572933963          42.50883015
+
+ *******************************************************************************
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE       21.58 TCPU       21.46
+ EEEEEEEEEE TERMINATION  DATE 09 12 2017 TIME 15:17:00.3
+NODE    0 CPU TIME =        21.462
+NODE    1 CPU TIME =        21.489
+NODE    2 CPU TIME =        21.491
+NODE    3 CPU TIME =        21.480
+NODE    4 CPU TIME =        21.494
+NODE    5 CPU TIME =        21.474
+NODE    6 CPU TIME =        21.496
+NODE    7 CPU TIME =        21.479
+NODE    8 CPU TIME =        21.282
+NODE    9 CPU TIME =        21.475
+NODE   10 CPU TIME =        21.293
+NODE   11 CPU TIME =        21.339
+NODE   12 CPU TIME =        21.436
+NODE   13 CPU TIME =        21.387
+NODE   14 CPU TIME =        21.489
+NODE   15 CPU TIME =        21.483
+    TOTAL CPU TIME =       343.049
+Sat  9 Dec 15:17:00 GMT 2017
+Disk usage:total 2720
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 dffit3.dat
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe00
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe01
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe02
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe03
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe04
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe05
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe06
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe07
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe08
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe09
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe10
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe11
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe12
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe13
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe14
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe15
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe00
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe01
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe02
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe03
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe04
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe05
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe06
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe07
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe08
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe09
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe10
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe11
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe12
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe13
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe14
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe15
+-rw------- 1 apm13 hpc-users    9688 Dec  9 15:16 fort.12
+-rw------- 1 apm13 hpc-users   37768 Dec  9 15:16 fort.13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe15
+-rw------- 1 apm13 hpc-users     600 Dec  9 15:17 fort.19.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe15
+-rw------- 1 apm13 hpc-users  119900 Dec  9 15:16 fort.20
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe07
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe08
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe09
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe10
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe11
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe12
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe13
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe14
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe15
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe00
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe01
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe02
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe03
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe04
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe05
+-rw------- 1 apm13 hpc-users    1440 Dec  9 15:17 fort.62.pe06
+-rw------- 1 apm13 hpc-users    1440 Dec  9 15:17 fort.62.pe07
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe08
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe09
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe10
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe11
+-rw------- 1 apm13 hpc-users    1936 Dec  9 15:17 fort.62.pe12
+-rw------- 1 apm13 hpc-users    1936 Dec  9 15:17 fort.62.pe13
+-rw------- 1 apm13 hpc-users    1504 Dec  9 15:17 fort.62.pe14
+-rw------- 1 apm13 hpc-users    1504 Dec  9 15:17 fort.62.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe15
+-rw------- 1 apm13 hpc-users     752 Dec  9 15:17 fort.8.pe00
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe01
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe02
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe03
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe04
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe05
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe06
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe07
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe08
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe09
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe10
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe11
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe12
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe13
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe14
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe15
+-rw------- 1 apm13 hpc-users  119900 Dec  9 15:16 fort.9
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe00
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe01
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe02
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe03
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe04
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe05
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe06
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe07
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe08
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe09
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe10
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe11
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe12
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe13
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe14
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe15
+-rw------- 1 apm13 hpc-users 1293638 Dec  9 15:17 FREQINFO.DAT
+-rw------- 1 apm13 hpc-users    6885 Dec  9 15:17 HESSFREQ.DAT
+-rw------- 1 apm13 hpc-users    1181 Dec  9 15:16 INPUT
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 MULLIKEN.DAT
+-rw------- 1 apm13 hpc-users  162659 Dec  9 15:17 SCFOUT.LOG
+3	/var/tmp/pbs.902152.cx1/water_freq_tscan_10982/
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/sda8      950707968 1216384 949491584   1% /tmp
+/dev/sda8      950707968 1216384 949491584   1% /tmp
+Sat  9 Dec 15:17:00 GMT 2017
+cx1-136-16-3.cx1.hpc.ic.ac.uk
+total 2720
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 dffit3.dat
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe00
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe01
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe02
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe03
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe04
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe05
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe06
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe07
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe08
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe09
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe10
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.10.pe11
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe12
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe13
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.10.pe14
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.10.pe15
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe00
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe01
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe02
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe03
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe04
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe05
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe06
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe07
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe08
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe09
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe10
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe11
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe12
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe13
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe14
+-rw------- 1 apm13 hpc-users   13992 Dec  9 15:16 fort.11.pe15
+-rw------- 1 apm13 hpc-users    9688 Dec  9 15:16 fort.12
+-rw------- 1 apm13 hpc-users   37768 Dec  9 15:16 fort.13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.17.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.18.pe15
+-rw------- 1 apm13 hpc-users     600 Dec  9 15:17 fort.19.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.19.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.1.pe15
+-rw------- 1 apm13 hpc-users  119900 Dec  9 15:16 fort.20
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.28.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.29.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.38.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.3.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.40.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.61.pe07
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe08
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe09
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe10
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe11
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe12
+-rw------- 1 apm13 hpc-users    2272 Dec  9 15:17 fort.61.pe13
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe14
+-rw------- 1 apm13 hpc-users    2992 Dec  9 15:17 fort.61.pe15
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe00
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe01
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe02
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe03
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe04
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe05
+-rw------- 1 apm13 hpc-users    1440 Dec  9 15:17 fort.62.pe06
+-rw------- 1 apm13 hpc-users    1440 Dec  9 15:17 fort.62.pe07
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe08
+-rw------- 1 apm13 hpc-users     496 Dec  9 15:17 fort.62.pe09
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe10
+-rw------- 1 apm13 hpc-users    1008 Dec  9 15:17 fort.62.pe11
+-rw------- 1 apm13 hpc-users    1936 Dec  9 15:17 fort.62.pe12
+-rw------- 1 apm13 hpc-users    1936 Dec  9 15:17 fort.62.pe13
+-rw------- 1 apm13 hpc-users    1504 Dec  9 15:17 fort.62.pe14
+-rw------- 1 apm13 hpc-users    1504 Dec  9 15:17 fort.62.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.82.pe15
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe00
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe01
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe02
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe03
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe04
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe05
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe06
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe07
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe08
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe09
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe10
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe11
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe12
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe13
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe14
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 fort.83.pe15
+-rw------- 1 apm13 hpc-users     752 Dec  9 15:17 fort.8.pe00
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe01
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe02
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe03
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe04
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe05
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe06
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe07
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe08
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe09
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe10
+-rw------- 1 apm13 hpc-users    7208 Dec  9 15:16 fort.8.pe11
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe12
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe13
+-rw------- 1 apm13 hpc-users    1576 Dec  9 15:16 fort.8.pe14
+-rw------- 1 apm13 hpc-users   16936 Dec  9 15:16 fort.8.pe15
+-rw------- 1 apm13 hpc-users  119900 Dec  9 15:16 fort.9
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe00
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe01
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe02
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe03
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe04
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe05
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe06
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe07
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe08
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe09
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe10
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe11
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe12
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe13
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe14
+-rw------- 1 apm13 hpc-users   20408 Dec  9 15:16 fort.95.pe15
+-rw------- 1 apm13 hpc-users 1293638 Dec  9 15:17 FREQINFO.DAT
+-rw------- 1 apm13 hpc-users    6885 Dec  9 15:17 HESSFREQ.DAT
+-rw------- 1 apm13 hpc-users    1181 Dec  9 15:16 INPUT
+-rw------- 1 apm13 hpc-users       0 Dec  9 15:16 MULLIKEN.DAT
+-rw------- 1 apm13 hpc-users  162659 Dec  9 15:17 SCFOUT.LOG
+3	/var/tmp/pbs.902152.cx1/water_freq_tscan_10982/
+Filesystem        1K-blocks        Used  Available Use% Mounted on
+fs13:/export131 13970974720 11627966464 2343008256  84% /export131
+/dev/sda8         950707968     1216384  949491584   1% /tmp
+ 
+TEMPORARY          SAVED (in /export101/work/apm13/final_simulations_june_2017/crystal/water/opt_mono_crystalline/freq_tscan)
+fort.9             water_freq_tscan.f9119900   Dec 9 15:16
+fort.20            water_freq_tscan.f20119900   Dec 9 15:16
+SCFOUT.LOG         water_freq_tscan.SCFLOG162659   Dec 9 15:16
+FREQINFO.DAT       water_freq_tscan.FREQINFO1293638  Dec 9 15:16
+ 
+file fort.13 saved as /export101/work/apm13/final_simulations_june_2017/crystal/water/opt_mono_crystalline/freq_tscan/water_freq_tscan.f13
+/var/tmp/pbs.902152.cx1/water_freq_tscan_10982 removed
