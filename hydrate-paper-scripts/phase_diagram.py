@@ -79,3 +79,4 @@ if __name__=="__main__":
     0.5 * df_thermo_mono_disp['G_solid(eV/cell)'] - df_thermo_mapi_disp['G_solid(eV/cell)'] - df_thermo_water[
         'G_solid(eV/cell)']).values)
     plt.show()
+

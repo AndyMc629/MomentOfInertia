@@ -19,8 +19,13 @@ conv=27.2114 # 1 hartree = 27.2114 eV
 # the U_DFT for water below was found by deleting all the atoms inside a monohydrate unit cell and leaving the waters
 # and running the optimisation with all of the same parameters.
 U_dft = {'water': -0.5*1.5221135574129E+02*conv,
-         'mono': -0.5*7.9836512167779E+02*conv,
-         'mapi': -3.2304127634186E+02*conv} 
+         'mono': -0.5*2.3951108085020E+03*conv,
+         'mapi': -0.5*7.983651216778E+02*conv,
+         'di': -86466.55,
+         'pbi2': -2.154603426126E+02*conv}
+         #
+         #'mono': -0.5*7.9836512167779E+02*conv,
+         #'mapi': -3.2304127634186E+02*conv}
 
 # the U_DFT for water given below was calculated using PBESol but in a molecule (not in a cell) - this must be the
 # cause of the large energy difference and then the screwy results that come from that.
