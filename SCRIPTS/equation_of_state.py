@@ -30,13 +30,14 @@ print "Fitting to volume now"
 print "!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
 x0 = [ -56.0, 0.54, 2.0, 16.5] #initial guess of parameters
 
-plsq = leastsq(objective, x0, args=(energies, vols))
+plsq = leastsq(objective, x0, args=(energies, vols), maxfev=10000)
 
 print 'Fitted parameters = {0}'.format(plsq[0])
 print "\nEquilibrium volume = {0:.2f} $\AA^3$".format(plsq[0][3])
 
 import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt 
+plt.figure(1)
 plt.plot(vols,energies, 'ro')
 
 #plot the fitted curve on top
@@ -47,25 +48,27 @@ plt.annotate(r'V$_0$ = {0:.2f} $\AA^3$'.format(plsq[0][3]), xy=(0.6, 0.2),  xyco
 plt.xlabel(r'Volume ($\AA^3$)')
 plt.ylabel('Energy (eV)')
 plt.savefig('equation_of_state.pdf')
-
+plt.close(1)
 
 print "\n!!!!!!!!!!!!!!!!!!!!!!!!!!"
 print "Fitting to scalefactor now"
 print "!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
 x0 = [ -56.0, 0.54, 2.0, 1.0] #initial guess of parameters
 
-plsq = leastsq(objective, x0, args=(energies, scalefactors))
+plsq = leastsq(objective, x0, args=(energies, scalefactors), maxfev=10000)
 
 print 'Fitted parameters = {0}'.format(plsq[0])
 print "\nEquilibrium scalefactor = {0:.3f}".format(plsq[0][3])
 print ""
+plt.figure(2)
 plt.plot(scalefactors,energies, 'ro')
 
 #plot the fitted curve on top
-x = np.linspace(min(vols), max(vols), 50) 
+x = np.linspace(min(scalefactors), max(scalefactors), 50) 
 y = Murnaghan(plsq[0], x)
 plt.plot(x, y, 'k-')
 plt.annotate(r'Scale$_0$ = {0:.3f}'.format(plsq[0][3]), xy=(0.6, 0.2),  xycoords='axes fraction')
 plt.xlabel(r'Scale')
 plt.ylabel('Energy (eV)')
 plt.savefig('equation_of_state_scale.pdf')
+plt.close(2)
