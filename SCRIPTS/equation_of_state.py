@@ -28,7 +28,10 @@ def objective(pars, y, x):
 print "\n!!!!!!!!!!!!!!!!!!!!!!!!!!"
 print "Fitting to volume now"
 print "!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
-x0 = [ -56.0, 0.54, 2.0, 16.5] #initial guess of parameters
+#x0 = [ -56.0, 0.54, 2.0, 16.5] #initial guess of parameters
+# The initial guess for volume needs to be far larger when working with
+# the volumes in angstroms cubed. Compare with x0 below.
+x0 = [-56, 0.54, 2.0, 1000]
 
 plsq = leastsq(objective, x0, args=(energies, vols), maxfev=10000)
 
@@ -36,7 +39,11 @@ print 'Fitted parameters = {0}'.format(plsq[0])
 print "\nEquilibrium volume = {0:.2f} $\AA^3$".format(plsq[0][3])
 
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt 
+import matplotlib
+font = {'size'   : 16}
+
+matplotlib.rc('font', **font)
+
 plt.figure(1)
 plt.plot(vols,energies, 'ro')
 
