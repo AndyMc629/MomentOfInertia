@@ -2,8 +2,8 @@
 
 home=$PWD
 today=`date '+%d_%m_%Y'`;
-#for i in 0.925 0.95 0.975 1.00 1.025 1.05 1.075; do 
-for i in 0.90 0.95 1.00 1.05 1.10; do
+for i in 0.925 0.95 0.975 1.00 1.025 1.05 1.075; do 
+#for i in 0.90 0.95 1.00 1.05 1.10; do
 	# pad out the numbers 
 	E=$(tail -1 Vol-${i}/OSZICAR)
 	V=$(grep -m 1 'volume of cell' Vol-${i}/OUTCAR | grep -o '[0-9]*\.[0-9]*')
